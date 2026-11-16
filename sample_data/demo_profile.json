@@ -1,0 +1,8 @@
+{
+  "name": "Demo Student",
+  "occupation": "College student",
+  "skills": ["Python basics"],
+  "weekly_hours": 6,
+  "goal": "Become an AI engineer",
+  "note": "Synthetic demo data. Not a real person's profile."
+}
