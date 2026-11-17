@@ -5,6 +5,15 @@ from core.future_lab import generate_scenarios
 from core.evolution import build_evolution_report
 from core.experiment import create_experiment, add_observation, get_experiment_summary
 from core.prediction import save_prediction, list_predictions
+from pathlib import Path
+import streamlit as st
+
+css_path = Path(__file__).parent / "assets" / "style.css"
+
+st.markdown(
+    f"<style>{css_path.read_text(encoding='utf-8')}</style>",
+    unsafe_allow_html=True
+)
 
 st.set_page_config(page_title="EVOLVE AI", page_icon="🌱", layout="wide")
 init_db()

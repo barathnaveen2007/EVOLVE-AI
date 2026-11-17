@@ -1,0 +1,85 @@
+
+/* EVOLVE AI - Premium Design System */
+
+:root {
+    --background: #080b16;
+    --surface: #11172a;
+    --surface-light: #19213a;
+    --primary: #8b5cf6;
+    --secondary: #38bdf8;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+}
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(91, 33, 182, 0.20),
+            transparent 35%
+        ),
+        var(--background);
+    color: var(--text);
+}
+
+[data-testid="stSidebar"] {
+    background: #0d1222;
+    border-right: 1px solid #252c43;
+}
+
+h1, h2, h3 {
+    color: var(--text) !important;
+    font-weight: 700 !important;
+}
+
+p, label {
+    color: var(--muted);
+}
+
+[data-testid="stMetric"] {
+    background: linear-gradient(
+        135deg,
+        #171d34,
+        #101629
+    );
+    border: 1px solid #303957;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+[data-testid="stMetricValue"] {
+    color: #c4b5fd;
+}
+
+.stButton > button {
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #2563eb
+    );
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.stButton > button:hover {
+    border: 1px solid #a78bfa;
+    box-shadow: 0 0 18px #7c3aed55;
+}
+
+[data-testid="stExpander"] {
+    border: 1px solid #303957;
+    border-radius: 12px;
+}
+
+input, textarea {
+    background-color: #151c30 !important;
+    color: white !important;
+}
+
+hr {
+    border-color: #29324b;
+}
